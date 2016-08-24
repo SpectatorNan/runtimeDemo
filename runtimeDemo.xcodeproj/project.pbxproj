@@ -16,6 +16,7 @@
 		74C58A171D6DC60D00395759 /* runtimeDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 74C58A161D6DC60D00395759 /* runtimeDemoTests.m */; };
 		74C58A221D6DC60D00395759 /* runtimeDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 74C58A211D6DC60D00395759 /* runtimeDemoUITests.m */; };
 		74C58A321D6DC65E00395759 /* TestMetaClassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74C58A311D6DC65E00395759 /* TestMetaClassViewController.m */; };
+		76119A991D6DF00E005FCCB9 /* MyClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 76119A981D6DF00E005FCCB9 /* MyClass.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,8 @@
 		74C58A2F1D6DC65E00395759 /* runtimeDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = runtimeDemo.h; sourceTree = "<group>"; };
 		74C58A301D6DC65E00395759 /* TestMetaClassViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestMetaClassViewController.h; sourceTree = "<group>"; };
 		74C58A311D6DC65E00395759 /* TestMetaClassViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestMetaClassViewController.m; sourceTree = "<group>"; };
+		76119A971D6DF00E005FCCB9 /* MyClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyClass.h; sourceTree = "<group>"; };
+		76119A981D6DF00E005FCCB9 /* MyClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyClass.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,9 +108,7 @@
 		74C589FB1D6DC60C00395759 /* runtimeDemo */ = {
 			isa = PBXGroup;
 			children = (
-				74C58A2F1D6DC65E00395759 /* runtimeDemo.h */,
-				74C58A301D6DC65E00395759 /* TestMetaClassViewController.h */,
-				74C58A311D6DC65E00395759 /* TestMetaClassViewController.m */,
+				76119A961D6DEF6C005FCCB9 /* runtimeTest */,
 				74C589FF1D6DC60C00395759 /* AppDelegate.h */,
 				74C58A001D6DC60C00395759 /* AppDelegate.m */,
 				74C58A021D6DC60C00395759 /* ViewController.h */,
@@ -115,7 +116,6 @@
 				74C58A051D6DC60C00395759 /* Main.storyboard */,
 				74C58A081D6DC60C00395759 /* Assets.xcassets */,
 				74C58A0A1D6DC60C00395759 /* LaunchScreen.storyboard */,
-				74C58A0D1D6DC60C00395759 /* Info.plist */,
 				74C589FC1D6DC60C00395759 /* Supporting Files */,
 			);
 			path = runtimeDemo;
@@ -124,6 +124,8 @@
 		74C589FC1D6DC60C00395759 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				74C58A0D1D6DC60C00395759 /* Info.plist */,
+				74C58A2F1D6DC65E00395759 /* runtimeDemo.h */,
 				74C589FD1D6DC60C00395759 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -145,6 +147,17 @@
 				74C58A231D6DC60D00395759 /* Info.plist */,
 			);
 			path = runtimeDemoUITests;
+			sourceTree = "<group>";
+		};
+		76119A961D6DEF6C005FCCB9 /* runtimeTest */ = {
+			isa = PBXGroup;
+			children = (
+				74C58A301D6DC65E00395759 /* TestMetaClassViewController.h */,
+				74C58A311D6DC65E00395759 /* TestMetaClassViewController.m */,
+				76119A971D6DF00E005FCCB9 /* MyClass.h */,
+				76119A981D6DF00E005FCCB9 /* MyClass.m */,
+			);
+			name = runtimeTest;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,6 +292,7 @@
 			files = (
 				74C58A321D6DC65E00395759 /* TestMetaClassViewController.m in Sources */,
 				74C58A041D6DC60C00395759 /* ViewController.m in Sources */,
+				76119A991D6DF00E005FCCB9 /* MyClass.m in Sources */,
 				74C58A011D6DC60C00395759 /* AppDelegate.m in Sources */,
 				74C589FE1D6DC60C00395759 /* main.m in Sources */,
 			);
@@ -508,6 +522,7 @@
 				74C58A281D6DC60D00395759 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		74C58A291D6DC60D00395759 /* Build configuration list for PBXNativeTarget "runtimeDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -516,6 +531,7 @@
 				74C58A2B1D6DC60D00395759 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		74C58A2C1D6DC60D00395759 /* Build configuration list for PBXNativeTarget "runtimeDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +540,7 @@
 				74C58A2E1D6DC60D00395759 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
