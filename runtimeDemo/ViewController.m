@@ -20,7 +20,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    NSLog(@" nil class name %s", object_getClassName(nil));
+//    NSLog(@" nil class name %s", object_getClassName(nil));
 }
 
 - (void)didReceiveMemoryWarning {
@@ -52,6 +52,12 @@
     
  
     NSLog(@"===================================");
+    
+    Class meta_class = objc_getMetaClass(class_getName(cls));
+    NSLog(@"%s's meta-class is %s",class_getName(cls),class_getName(meta_class));
+    
+    NSLog(@"===================================");
+    
     
     // 变量实例大小
     NSLog(@"instance size: %zu", class_getInstanceSize(cls));
@@ -121,9 +127,9 @@
         NSLog(@"class method : %s",sel_getName(method_getName(classMethod)));
     }
     
-    
+    SNUndeclaredSelectorWarning(
     NSLog(@"MyClass is %@ responsed to selector: method3withArg1:arg2",class_respondsToSelector(cls, @selector(method3withArg1:arg2:))?@"":@"not");
-    
+    );
     
     IMP imp = class_getMethodImplementation(cls, @selector(method1));
     imp();
@@ -148,6 +154,36 @@
     
     NSLog(@"===================================");
 }
+
+void imp_submethod1(id self, SEL _cmd) {
+    NSLog(@"run sub method 1");
+}
+
+- (IBAction)runtimeCreateClass {
+    
+    Class cls = objc_allocateClassPair(MyClass.class, "MySubClass", 0);
+    
+    class_addMethod(cls, @selector(submethod1), (IMP)imp_submethod1, "v@:");
+    class_replaceMethod(cls, @selector(method1), (IMP)imp_submethod1, "v@:");
+    class_addIvar(cls, "_ivar1", sizeof(NSString *), log(sizeof(NSString *)), "i");
+    
+    objc_property_attribute_t type = {
+        "T",
+        "@\"NSString\""
+    };
+    objc_property_attribute_t ownership = { "C", "" };
+    objc_property_attribute_t backingivar = { "V", "_ivar"};
+    objc_property_attribute_t attrs[] = {type,ownership,backingivar};
+    
+    class_addProperty(cls, "property2", attrs, 3);
+    objc_registerClassPair(cls);
+    
+    id instance = [[cls alloc] init];
+    [instance performSelector:@selector(submethod1)];
+    [instance performSelector:@selector(method1)];
+    
+}
+
 
 @end
 

@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="16A270f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="SDT-F3-JyI">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="SDT-F3-JyI">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -25,10 +25,44 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mkp-fZ-WYI">
-                                <rect key="frame" x="20" y="148" width="116" height="30"/>
+                                <rect key="frame" x="20" y="129" width="116" height="30"/>
                                 <state key="normal" title="MyClassExample"/>
                                 <connections>
                                     <action selector="myClassExample:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CM4-ui-bYY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QBO-YE-pAx">
+                                <rect key="frame" x="20" y="167" width="162" height="30"/>
+                                <state key="normal" title="runtimeCreateSubClass"/>
+                                <connections>
+                                    <action selector="runtimeCreateClass" destination="BYZ-38-t0r" eventType="touchUpInside" id="elS-Sr-0nL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Cb-br-pz4">
+                                <rect key="frame" x="199" y="303" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oub-FP-hns">
+                                <rect key="frame" x="199" y="270" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1xE-IM-LTg">
+                                <rect key="frame" x="120" y="303" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pFd-8K-1V4">
+                                <rect key="frame" x="120" y="265" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W7f-no-xd9">
+                                <rect key="frame" x="36" y="303" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Uu-xh-X8E">
+                                <rect key="frame" x="20" y="205" width="134" height="30"/>
+                                <state key="normal" title="MRCViewController"/>
+                                <connections>
+                                    <segue destination="mhw-qK-wFx" kind="show" id="OtC-4F-5eK"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -39,6 +73,34 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="860.5" y="1100.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="gzb-2V-942">
+            <objects>
+                <viewController id="mhw-qK-wFx" customClass="MRCViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="NOu-UP-eTz"/>
+                        <viewControllerLayoutGuide type="bottom" id="g8h-ID-MGl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hsd-vb-Upy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rRk-5q-EYv">
+                                <rect key="frame" x="20" y="98" width="157" height="30"/>
+                                <state key="normal" title="runtimeCreateInstance"/>
+                                <connections>
+                                    <action selector="runtimeCreateInstance:" destination="mhw-qK-wFx" eventType="touchUpInside" id="0es-BB-fGY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XDo-Dq-tcV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1384.5" y="895.5"/>
         </scene>
         <!--Test Meta Class View Controller-->
         <scene sceneID="qBu-kQ-453">
@@ -66,7 +128,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3La-uA-dJe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1288.5" y="1100.5"/>
+            <point key="canvasLocation" x="1370.5" y="1552.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="z3P-3R-kNC">

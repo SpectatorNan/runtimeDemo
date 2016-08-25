@@ -16,6 +16,7 @@
 		74C58A171D6DC60D00395759 /* runtimeDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 74C58A161D6DC60D00395759 /* runtimeDemoTests.m */; };
 		74C58A221D6DC60D00395759 /* runtimeDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 74C58A211D6DC60D00395759 /* runtimeDemoUITests.m */; };
 		74C58A321D6DC65E00395759 /* TestMetaClassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74C58A311D6DC65E00395759 /* TestMetaClassViewController.m */; };
+		74C58A351D6E905200395759 /* MRCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74C58A341D6E905200395759 /* MRCViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		76119A991D6DF00E005FCCB9 /* MyClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 76119A981D6DF00E005FCCB9 /* MyClass.m */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +57,8 @@
 		74C58A2F1D6DC65E00395759 /* runtimeDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = runtimeDemo.h; sourceTree = "<group>"; };
 		74C58A301D6DC65E00395759 /* TestMetaClassViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestMetaClassViewController.h; sourceTree = "<group>"; };
 		74C58A311D6DC65E00395759 /* TestMetaClassViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestMetaClassViewController.m; sourceTree = "<group>"; };
+		74C58A331D6E905200395759 /* MRCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MRCViewController.h; sourceTree = "<group>"; };
+		74C58A341D6E905200395759 /* MRCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MRCViewController.m; sourceTree = "<group>"; };
 		76119A971D6DF00E005FCCB9 /* MyClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyClass.h; sourceTree = "<group>"; };
 		76119A981D6DF00E005FCCB9 /* MyClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyClass.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -156,6 +159,8 @@
 				74C58A311D6DC65E00395759 /* TestMetaClassViewController.m */,
 				76119A971D6DF00E005FCCB9 /* MyClass.h */,
 				76119A981D6DF00E005FCCB9 /* MyClass.m */,
+				74C58A331D6E905200395759 /* MRCViewController.h */,
+				74C58A341D6E905200395759 /* MRCViewController.m */,
 			);
 			name = runtimeTest;
 			sourceTree = "<group>";
@@ -295,6 +300,7 @@
 				76119A991D6DF00E005FCCB9 /* MyClass.m in Sources */,
 				74C58A011D6DC60C00395759 /* AppDelegate.m in Sources */,
 				74C589FE1D6DC60C00395759 /* main.m in Sources */,
+				74C58A351D6E905200395759 /* MRCViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -20,14 +20,18 @@
 - (void)method3withArg1:(NSInteger)arg1 arg2:(NSString *)arg2;
 @end
 
+//#pragma clang diagnostic push
+//#pragma clang diagnostic ignored "-Wprotocol"
+//#define push @#clang diagnostic pop
+SNMethodProtocolNotImplementedWarning(
 @implementation MyClass
-
+)
 + (void)classMethod1 {
     
 }
 
 - (void)method1 {
-    
+     NSLog(@"call method method1");
 }
 
 - (void)method2 {
