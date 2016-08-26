@@ -19,6 +19,7 @@
 		74C58A351D6E905200395759 /* MRCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74C58A341D6E905200395759 /* MRCViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		76119A991D6DF00E005FCCB9 /* MyClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 76119A981D6DF00E005FCCB9 /* MyClass.m */; };
 		7627830D1D708CF30079B164 /* AssociatedObjectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7627830C1D708CF30079B164 /* AssociatedObjectViewController.m */; };
+		762783101D7095540079B164 /* INstanceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7627830F1D7095540079B164 /* INstanceModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,8 @@
 		76119A981D6DF00E005FCCB9 /* MyClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyClass.m; sourceTree = "<group>"; };
 		7627830B1D708CF30079B164 /* AssociatedObjectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssociatedObjectViewController.h; sourceTree = "<group>"; };
 		7627830C1D708CF30079B164 /* AssociatedObjectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssociatedObjectViewController.m; sourceTree = "<group>"; };
+		7627830E1D7095540079B164 /* INstanceModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INstanceModel.h; sourceTree = "<group>"; };
+		7627830F1D7095540079B164 /* INstanceModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INstanceModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +161,8 @@
 		76119A961D6DEF6C005FCCB9 /* runtimeTest */ = {
 			isa = PBXGroup;
 			children = (
+				7627830E1D7095540079B164 /* INstanceModel.h */,
+				7627830F1D7095540079B164 /* INstanceModel.m */,
 				74C58A301D6DC65E00395759 /* TestMetaClassViewController.h */,
 				74C58A311D6DC65E00395759 /* TestMetaClassViewController.m */,
 				76119A971D6DF00E005FCCB9 /* MyClass.h */,
@@ -300,6 +305,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				762783101D7095540079B164 /* INstanceModel.m in Sources */,
 				74C58A321D6DC65E00395759 /* TestMetaClassViewController.m in Sources */,
 				74C58A041D6DC60C00395759 /* ViewController.m in Sources */,
 				76119A991D6DF00E005FCCB9 /* MyClass.m in Sources */,

@@ -7,8 +7,19 @@
 //
 
 #import "AssociatedObjectViewController.h"
+#import "INstanceModel.h"
+
+@interface AssociatedObjectViewController ()
+
+@property (nonatomic, strong) NSDictionary *ditcA;
+
+@property (nonatomic, strong) NSDictionary *dictB;
+
+@end
+
 
 @implementation AssociatedObjectViewController
+
 
 static const char kSNActionHandlerTapGestureKey;
 static const char kSNActionHandlerTapBlockKey;
@@ -40,5 +51,49 @@ static const char kSNActionHandlerTapBlockKey;
         }
     }
 }
+
+
+
+#pragma mark ---
+
+- (NSDictionary *)dictB {
+    
+    
+    if (!_dictB) {
+        _dictB = @{
+                   @"name2":@"张三",
+                   @"status2":@"end"
+                   };
+    }
+    
+    return _dictB;
+}
+
+
+- (NSDictionary *)ditcA {
+    
+    if (!_ditcA) {
+        _ditcA = @{
+                   @"name1":@"张三",
+                   @"status1":@"start"
+                   };
+    }
+    
+    return _ditcA;
+}
+
+- (IBAction)dicToModel:(id)sender {
+    
+    INstanceModel *modelA = [[INstanceModel alloc] init];
+    [modelA setDataWithDic:self.ditcA];
+    
+    NSLog(@"dictA name: %@, status %@",modelA.name,modelA.status);
+    
+    INstanceModel *modelB = [[INstanceModel alloc] init];
+    [modelB setDataWithDic:self.dictB];
+    
+    NSLog(@"ditB name: %@, status %@",modelB.name,modelB.status);
+}
+
 
 @end

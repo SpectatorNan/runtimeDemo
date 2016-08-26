@@ -88,6 +88,15 @@
                     <view key="view" contentMode="scaleToFill" id="zbP-bs-h8I">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vxV-Up-Uqb">
+                                <rect key="frame" x="20" y="130" width="79" height="30"/>
+                                <state key="normal" title="dicToModel"/>
+                                <connections>
+                                    <action selector="dicToModel:" destination="qan-P1-bUo" eventType="touchUpInside" id="8xL-Fm-JZA"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
