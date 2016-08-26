@@ -162,9 +162,9 @@ void imp_submethod1(id self, SEL _cmd) {
 - (IBAction)runtimeCreateClass {
     
     Class cls = objc_allocateClassPair(MyClass.class, "MySubClass", 0);
-    
+    SNUndeclaredSelectorWarning(
     class_addMethod(cls, @selector(submethod1), (IMP)imp_submethod1, "v@:");
-    class_replaceMethod(cls, @selector(method1), (IMP)imp_submethod1, "v@:");
+                                class_replaceMethod(cls, @selector(method1), (IMP)imp_submethod1, "v@:"););
     class_addIvar(cls, "_ivar1", sizeof(NSString *), log(sizeof(NSString *)), "i");
     
     objc_property_attribute_t type = {
@@ -179,9 +179,10 @@ void imp_submethod1(id self, SEL _cmd) {
     objc_registerClassPair(cls);
     
     id instance = [[cls alloc] init];
+    SNUndeclaredSelectorWarning(
     [instance performSelector:@selector(submethod1)];
     [instance performSelector:@selector(method1)];
-    
+                                );
 }
 
 
