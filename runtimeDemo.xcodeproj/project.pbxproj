@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		746B56E51D7D5015008806CB /* UIViewController+Tracking.m in Sources */ = {isa = PBXBuildFile; fileRef = 746B56E41D7D5015008806CB /* UIViewController+Tracking.m */; };
 		74C589FE1D6DC60C00395759 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 74C589FD1D6DC60C00395759 /* main.m */; };
 		74C58A011D6DC60C00395759 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 74C58A001D6DC60C00395759 /* AppDelegate.m */; };
 		74C58A041D6DC60C00395759 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74C58A031D6DC60C00395759 /* ViewController.m */; };
@@ -40,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		746B56E31D7D5015008806CB /* UIViewController+Tracking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Tracking.h"; sourceTree = "<group>"; };
+		746B56E41D7D5015008806CB /* UIViewController+Tracking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Tracking.m"; sourceTree = "<group>"; };
 		74C589F91D6DC60C00395759 /* runtimeDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = runtimeDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74C589FD1D6DC60C00395759 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		74C589FF1D6DC60C00395759 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -171,6 +174,8 @@
 				74C58A341D6E905200395759 /* MRCViewController.m */,
 				7627830B1D708CF30079B164 /* AssociatedObjectViewController.h */,
 				7627830C1D708CF30079B164 /* AssociatedObjectViewController.m */,
+				746B56E31D7D5015008806CB /* UIViewController+Tracking.h */,
+				746B56E41D7D5015008806CB /* UIViewController+Tracking.m */,
 			);
 			name = runtimeTest;
 			sourceTree = "<group>";
@@ -313,6 +318,7 @@
 				74C58A011D6DC60C00395759 /* AppDelegate.m in Sources */,
 				74C589FE1D6DC60C00395759 /* main.m in Sources */,
 				74C58A351D6E905200395759 /* MRCViewController.m in Sources */,
+				746B56E51D7D5015008806CB /* UIViewController+Tracking.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
